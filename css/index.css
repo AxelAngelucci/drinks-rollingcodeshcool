@@ -12,10 +12,6 @@ main {
   min-height: calc(100vh - 20vh);
 }
 
-#inicio {
-  color: wheat;
-}
-
 .nav-link {
   color: wheat;
 }

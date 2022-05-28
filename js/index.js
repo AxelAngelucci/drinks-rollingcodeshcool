@@ -47,7 +47,7 @@ const addCardsSearchDrinks = (name) => {
     );
     link.setAttribute("id", "nombres-drinks");
     link.textContent = item.strDrink;
-    link.href = elemento.page;
+    link.href = item.page;
     container.appendChild(image);
     container.appendChild(link);
     fragment.appendChild(container);
@@ -75,7 +75,7 @@ const addCardsTrago = () => {
     );
     link.setAttribute("id", "nombres-drinks");
     link.textContent = elemento.strDrink;
-    link.href = "https://www.google.com.ar/?hl=es";
+    link.href = elemento.page;
     container.appendChild(image);
     container.appendChild(link);
     fragment.appendChild(container);
@@ -103,7 +103,7 @@ const addCardsDrinkGin = () => {
     );
     link.setAttribute("id", "nombres-drinks");
     link.textContent = elemento.strDrink;
-    link.href = "https://www.google.com.ar/?hl=es";
+    link.href = elemento.page;
     container.appendChild(image);
     container.appendChild(link);
     fragment.appendChild(container);
@@ -131,7 +131,7 @@ const addCardsDrinkVodka = () => {
     );
     link.setAttribute("id", "nombres-drinks");
     link.textContent = elemento.strDrink;
-    link.href = "https://www.google.com.ar/?hl=es";
+    link.href = elemento.page;
     container.appendChild(image);
     container.appendChild(link);
     fragment.appendChild(container);

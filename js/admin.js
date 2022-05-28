@@ -1,4 +1,4 @@
-import { InitLocalStorage } from "./data/tragos.js";
+import { InitLocalStorage } from "/drinks-rollingcodeshcool/js/data/tragos";
 
 const drinksStorage = JSON.parse(localStorage.getItem("drinksStorage"));
 

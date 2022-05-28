@@ -12,7 +12,7 @@ main {
   min-height: calc(100vh - 20vh);
 }
 
-.nav-link {
+#botonesNavBar {
   color: wheat;
 }
 
@@ -39,11 +39,11 @@ main {
 }
 
 #iconos-redes {
-  color: wheat;
+  color: white;
 }
 
 h5 {
-  color: wheat;
+  color: white;
 }
 
 footer {

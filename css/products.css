@@ -1,6 +1,20 @@
 body {
   background-color: #8f3975;
 }
+
+main {
+  min-height: calc(100vh - 20vh);
+}
+
+#botonesNavBar {
+  color: wheat;
+}
+
+#fondoBoton {
+  background-color: #8f3975;
+  border: 2px solid black;
+}
+
 .tittle {
   color: wheat;
   font-family: "Alfa Slab One", cursive;
@@ -137,6 +151,7 @@ td {
 
 .footer {
   background-color: wheat;
+  min-height: calc(100vh - main);
 }
 
 .comments {
@@ -157,6 +172,23 @@ td {
 
 .public {
   width: 95%;
+}
+
+#iconos-redes {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+footer {
+  min-height: calc(100vh - main);
+}
+
+#logoFooter {
+  color: wheat;
+  width: 8vw;
 }
 
 @media only screen and (max-width: 750px) {

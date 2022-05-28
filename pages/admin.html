@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="..//css/admin.css" />
+</head>
+
+<body>
+
+  <head class="h-25">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-end">
+      <div class="container-fluid text-end">
+        <button class="navbar-toggler fs-1" id="fondoBoton" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="spanFondo"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end fs-6" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-2 gap-4 d-flex">
+            <li class="nav-item">
+              <a class="nav-link active" id="inicio" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <main>
+    <section>
+      <div class="container my-5 pb-5">
+        <div class="row">
+          <div class="h1 text-center pb-5">Lista de tragos</div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="text-center" id="color-text">Id</th>
+                <th scope="col" class="text-center" id="color-text">Name</th>
+                <th scope="col" class="text-center" id="color-text">Image</th>
+                <th scope="col" class="text-center" id="color-text">
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody id="tableDrinks" class="container-fluid"></tbody>
+          </table>
+        </div>
+        <div class="container text-end my-3">
+          <div class="container d-block ps-0 pt-1">
+            <button type="button" class="btn btn-primary fs-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+              id="btnNewDrink">
+              Agregar nuevo trago
+            </button>
+          </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">
+            Nuevo trago
+          </h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="my-4">
+              <label for="IdDrink" class="form-label fs-6">Ingrese un numero de 5 digitos para identificar al
+                trago</label>
+              <input type="text" class="form-control" id="newIdDrink" required></input>
+            </div>
+            <div class="my-4">
+              <label form="NombreDrink" class="form-label fs-6">Nombre del trago</label>
+              <input type="text" class="form-control" id="newNameDrink" required></input>
+            </div>
+            <div class="my-4">
+              <label form="CategoryDrink" class="form-label fs-6">Cateogira del trago (2021, Gin o Vodka)</label>
+              <input type="text" class="form-control" id="newCategoryDrink" required></input>
+            </div>
+            <div class="my-4">
+              <label for="Imagen" class="form-label fs-6">Ingrese la dirección web de la imagen</label>
+              <input type="url" class="form-control" id="newImageDrink" required />
+            </div>
+            <div class="my-4">
+              <label for="paginaNuevoTrago" class="form-label fs-6">Ingrese la dirección de la pagina del nuevo
+                trago</label>
+              <input type="url" class="form-control" id="newPageDrink" required />
+            </div>
+            <div class="modal-footer">
+             <button type="submit" class=" btn btn-primary" id='btnSendModal'>
+                Agregar
+             </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center mt-auto bg-dark text-white">
+        <div class="col-3 col-sm-4 pt-1 d-flex align-items-center justify-content-center">
+          <img id="logoFooter" src="../asset/img/logo.png" alt="" />
+        </div>
+        <div class="col-6 col-sm-4 pt-1">
+          <h5 class="fw-bold fs-1 mt-5 py-3">Redes Sociales</h5>
+          <div class="fs-1 d-flex my-3">
+            <a class="col" id="iconos-redes" href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="col" id="iconos-redes" href="http://www.twitter.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a class="col" id="iconos-redes" href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="col" id="iconos-redes" href="http://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a class="col" id="iconos-redes" href="http://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-pinterest"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 col-sm-4">
+          <div class="container-flui">
+            <h5 class="fw-bold fs-sm-1 mt-5 py-3">
+              Todos los derechos reservados
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+    <script src="../js/admin.js" type="module"></script>
+  </body>
+
+</html>

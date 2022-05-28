@@ -1,0 +1,61 @@
+.root {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #8f3975;
+}
+
+main {
+  min-height: calc(100vh - 20vh);
+}
+
+#inicio {
+  color: wheat;
+}
+
+.nav-link {
+  color: wheat;
+}
+
+#fondoBoton {
+  background-color: #8f3975;
+  border: 2px solid black;
+}
+
+.h1 {
+  color: wheat;
+  background: #8f3975;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+#id-text {
+  background-color: #8f3975;
+  color: wheat;
+}
+
+#color-text {
+  background-color: #8f3975;
+  color: wheat;
+}
+
+#iconos-redes {
+  color: wheat;
+}
+
+h5 {
+  color: wheat;
+}
+
+#logoFooter {
+  color: white;
+  width: 8vw;
+}
+
+footer {
+  min-height: calc(100vh - main);
+}

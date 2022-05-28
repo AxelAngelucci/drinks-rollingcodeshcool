@@ -47,7 +47,7 @@ const addCardsSearchDrinks = (name) => {
     );
     link.setAttribute("id", "nombres-drinks");
     link.textContent = item.strDrink;
-    link.href = "https://www.google.com.ar/?hl=es";
+    link.href = elemento.page;
     container.appendChild(image);
     container.appendChild(link);
     fragment.appendChild(container);

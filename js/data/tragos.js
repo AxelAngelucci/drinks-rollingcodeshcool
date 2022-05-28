@@ -5,6 +5,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/uxywyw1468877224.jpg",
     idDrink: "15395",
     category: "2021",
+    page: "/drinks-rollingcodeshcool/pages/products/fuk_me_up.html",
   },
   {
     strDrink: "110 in the shade",
@@ -75,6 +76,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg",
     idDrink: "15300",
     category: "Gin",
+    page: "/drinks-rollingcodeshcool/pages/products/Mile_Long_Island_Iced_Tea.html",
   },
   {
     strDrink: "69 Special",
@@ -82,6 +84,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg",
     idDrink: "13940",
     category: "Gin",
+    page: "/drinks-rollingcodeshcool/pages/products/special.html",
   },
   {
     strDrink: "A1",
@@ -89,6 +92,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg",
     idDrink: "17222",
     category: "Gin",
+    page: "/drinks-rollingcodeshcool/pages/products/a1.html",
   },
   {
     strDrink: "Abbey Cocktail",
@@ -96,6 +100,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/mr30ob1582479875.jpg",
     idDrink: "17834",
     category: "Gin",
+    page: "/drinks-rollingcodeshcool/pages/products/abbey_Cocktail.html",
   },
   {
     strDrink: "Abbey Martini",
@@ -103,6 +108,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/2mcozt1504817403.jpg",
     idDrink: "17223",
     category: "Gin",
+    page: "/drinks-rollingcodeshcool/pages/products/abbey_Martini.html",
   },
   {
     strDrink: "155 Belmont",
@@ -110,6 +116,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg",
     idDrink: "15346",
     category: "Vodka",
+    page: "/drinks-rollingcodeshcool/pages/products/belmont.html",
   },
   {
     strDrink: "Atlantic Sun",
@@ -124,6 +131,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/qyyvtu1468878544.jpg",
     idDrink: "14029",
     category: "Vodka",
+    page: "/drinks-rollingcodeshcool/pages/products/chevy_with_a_White_license_Plate.html",
   },
   {
     strDrink: "747 Drink",
@@ -131,6 +139,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/i9suxb1582474926.jpg",
     idDrink: "178318",
     category: "Vodka",
+    page: "/drinks-rollingcodeshcool/pages/products/drink-747.html",
   },
   {
     strDrink: "A Gilligan's Island",
@@ -138,6 +147,7 @@ const drinksAll = [
       "https://www.thecocktaildb.com/images/media/drink/wysqut1461867176.jpg",
     idDrink: "16943",
     category: "Vodka",
+    page: "/drinks-rollingcodeshcool/pages/products/gilligan's_Island.html",
   },
 ];
 

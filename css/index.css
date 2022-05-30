@@ -1,0 +1,56 @@
+.root {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #8f3975;
+}
+
+main {
+  min-height: calc(100vh - 20vh);
+}
+
+#botonesNavBar {
+  color: wheat;
+}
+
+#fondoBoton {
+  background-color: #8f3975;
+  border: 2px solid black;
+}
+
+.h1 {
+  color: wheat;
+  background: #8f3975;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+.card {
+  background-color: #8f3975;
+}
+
+#nombres-drinks {
+  background-color: #8f3975;
+  color: wheat;
+}
+
+#iconos-redes {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+footer {
+  min-height: calc(100vh - main);
+}
+
+#logoFooter {
+  color: wheat;
+  width: 8vw;
+}

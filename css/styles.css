@@ -313,3 +313,9 @@ input[type=email]:placeholder {
   height: 5px;
   width: 30px;
 }
+.register{
+  margin-bottom: 1rem;
+}
+.register span{
+  color: #0d0d0d;
+}

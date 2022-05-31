@@ -125,6 +125,7 @@ signupForm.addEventListener('submit', (e) => {
             localStorage.setItem('users', JSON.stringify(users));
             errorEmail.style.display = "none";
             confirm.style.display = "none";
+            window.location.href = "login.html"
         }else{
             confirm.style.display = "block";
             confirm.textContent = "The passwords most be equal"

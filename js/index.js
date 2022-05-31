@@ -1,4 +1,5 @@
 import { InitLocalStorage } from "./data/tragos.js";
+InitLocalStorage();
 
 const drinksStorage = JSON.parse(localStorage.getItem("drinksStorage"));
 

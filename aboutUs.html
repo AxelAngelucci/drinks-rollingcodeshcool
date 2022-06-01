@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RollingBar</title>
+    <title>About Us</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,10 +15,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/aboutUs.css" />
   </head>
+
   <body>
-    <header class="h-25">
+    <header>
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-end"
       >
@@ -46,6 +47,7 @@
                   id="botonesNavBar"
                   aria-current="page"
                   href="./index.html"
+                  target="blank"
                   >Inicio</a
                 >
               </li>
@@ -72,139 +74,64 @@
                 >
               </li>
             </ul>
-            <form class="d-flex" role="search" id="search">
-              <input
-                class="form-control me-2"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"
-                name="name"
-              />
-              <button
-                type="submit"
-                class="btn btn-outline-success"
-                id="botonBuscador"
-              >
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
-    <main class="h-50">
-      <section>
-        <div class="container fluid">
-          <div class="row border-1 my-5 gap-5" id="resultadoSearch"></div>
-        </div>
-      </section>
-      <section>
-        <div class="container fluid">
-          <div class="h1 display-4 text-center my-4 py-5">Recomendados</div>
-          <div class="row d-flex justify-content-center mb-5">
-            <div class="col-sm-12 col-lg-12 ms-3">
-              <div
-                id="carouselExampleControls"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="./assets/Carousel/1-900.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item active">
-                    <img
-                      src="./assets/Carousel/110.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item active">
-                    <img
-                      src="./assets/Carousel/florida buswacker.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container-fluid">
+    <main>
+      <div class="h1 text-white text-center">Miembros del equipo</div>
+      <div class="container-fluid text-center align-middle mt-5">
+        <div class="container mb-5 mt-5">
           <div class="row">
             <div class="col">
-              <div class="h1 display-4 text-center my-5 py-5">
-                Los 10 mejores tragos del 2021
-              </div>
-              <div
-                class="container-fluid d-flex justify-content-center flex-wrap gap-5"
-                id="CardsDrinks"
-              ></div>
+              <figure>
+                <img
+                  src="./assets/AboutUs/Axel-Angelucci.jpeg"
+                  class="img-thumbnail rounded-circle w-50"
+                  alt="Axel-Angelucci"
+                />
+                <figcaption class="text-white fs-4 pt-3">
+                  Axel Angelucci
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col">
+              <figure>
+                <img
+                  src="./assets/AboutUs/Johana Diaz.jpeg"
+                  class="img-thumbnail rounded-circle w-50"
+                  alt="Johana-Diaz"
+                />
+                <figcaption class="text-white fs-4 pt-3">
+                  Johana Diaz
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="container-fluid my-5">
+        <div class="container mt-5 mb-5">
           <div class="row">
             <div class="col">
-              <div class="h1 display-4 text-center mt-3 py-5">
-                Tragos con gin
-              </div>
-              <div
-                class="container-fluid d-flex justify-content-center flex-wrap gap-5"
-                id="CardsGin"
-              ></div>
+              <img
+                src="./assets/AboutUs/Nadia-Aranda.jpeg"
+                class="img-thumbnail rounded-circle w-50"
+                alt="Nadia-Aranda"
+              />
+              <figcaption class="text-white fs-4 pt-3">Nadia Aranda</figcaption>
             </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container-fluid my-5">
-          <div class="row">
             <div class="col">
-              <div class="h1 display-4 text-center mt-3 py-5">
-                Tragos con vodka
-              </div>
-              <div
-                class="container-fluid d-flex justify-content-center flex-wrap gap-5"
-                id="CardsVodka"
-              ></div>
+              <img
+                src="./assets/AboutUs/Pablo-Bertini.jpeg"
+                class="img-thumbnail rounded-circle w-50"
+                alt="Pablo-Bertini"
+              />
+              <figcaption class="text-white fs-4 pt-3">
+                Pablo Bertini
+              </figcaption>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="h-25">
       <div class="container-fluid">
@@ -212,7 +139,11 @@
           <div
             class="col-3 col-sm-4 py-2 d-flex align-items-center justify-content-center"
           >
-            <img id="logoFooter" src="./assets/Footer/logo.png" alt="" />
+            <img
+              id="logoFooter"
+              src="./assets/Footer/logo.png"
+              alt="logoFooter"
+            />
           </div>
           <div class="col-6 col-sm-4 pt-1">
             <h5 class="fw-bold fs-4 mt-5 py-3">Redes Sociales</h5>
@@ -274,16 +205,15 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/index.js" type="module"></script>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"
+  ></script>
 </html>

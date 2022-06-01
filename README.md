@@ -14,7 +14,7 @@ La pagina desarrollada es una pagina que contiene recetas de diversos tragos, lo
 <p align="center">
 	<img width="100" height="100" style="border-radius:50%" src="./img/axel.jpg" alt="avatar">
 	<img width="100" height="100" style="border-radius:50%" src="./img/nadia.jpg" alt="avatar">
-	<img width="100" height="100" style="border-radius:50%" src="./img/johana.png" alt="avatar">
+	<img width="100" height="100" style="border-radius:50%" src="./img/johana.jpg" alt="avatar">
 	<img width="100" height="100" style="border-radius:50%" src="./img/pablo.jpg" alt="avatar">
 </p>
 

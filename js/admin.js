@@ -10,8 +10,7 @@ const { drinksAll, drinksVodka } = drinksStorage;
 
 const tableDrinks = document.getElementById("tableDrinks");
 const fragment = document.createDocumentFragment();
-const btnNewDrink = document.getElementById("btnNewDrink");
-const btnSendModal = document.getElementById("btnSendModal");
+const form = document.getElementById("form");
 
 const addTableDrinks = () => {
   const drinksStorage2 = JSON.parse(localStorage.getItem("drinksStorage"));
@@ -31,7 +30,7 @@ const addTableDrinks = () => {
     nameTd.textContent = elemento.strDrink;
     nameTd.setAttribute("id", "color-text");
     nameTd.classList.add("text-center", "fw-bold", "fs-5", "px-5", "ms-5");
-    image.classList.add("img-fluid", "col-1");
+    image.classList.add("img-fluid", "w-25");
     image.src = elemento.strDrinkThumb;
     buttonEdit.setAttribute("type", "button");
     buttonEdit.classList.add("btn", "btn-warning");
@@ -85,27 +84,34 @@ const deleteDrink = (id) => {
 
 //ESTE EL BOTON DE AGREGAR TRAGOS MODAL
 
-class newDrink {
-  constructor(id, name, categoria, image, pag) {
-    this.id = id;
-    this.name = name;
-    this.categoria = categoria;
-    this.image = image;
-    this.pag = pag;
-  }
-}
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const strDrink = document.getElementById("NameDrink");
+  const idDrink = document.getElementById("IdDrink");
+  const strDrinkThumb = document.getElementById("ImageDrink");
+  const category = document.getElementById("CategoryDrink");
+  const page = document.getElementById("PageDrink");
+  const newDrink = {
+    strDrink: strDrink.value,
+    strDrinkThumb: strDrinkThumb.value,
+    idDrink: idDrink.value,
+    category: category.value,
+    page: page.value,
+  };
 
-btnSendModal.addEventListener("click", (e) => {
-  const newIdDrink = document.getElementById("newIdDrink").value;
-  const newNameDrink = document.getElementById("newNameDrink").value;
-  const newImageDrink = document.getElementById("newImageDrink").value;
-  const newPageDrink = document.getElementById("newPageDrink").value;
-  const newCategoryDrink = document.getElementById("newCategoryDrink").value;
-  const drink = new newDrink(
-    newIdDrink,
-    newNameDrink,
-    newCategoryDrink,
-    newImageDrink,
-    newPageDrink
+  strDrink.value = "";
+  idDrink.value = "";
+  strDrinkThumb.value = "";
+  idDrink.value = "";
+  category.value = "";
+  page.value = "";
+
+  localStorage.setItem(
+    "drinksStorage",
+    JSON.stringify({
+      ...drinksStorage,
+      drinksAll: [...drinksStorage.drinksAll, newDrink],
+    })
   );
+  window.location.reload();
 });

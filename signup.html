@@ -1,37 +1,54 @@
 <!--PAGINA FORMULARIO DE REGISTRO-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Register</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper fadeInDown">
-        <div id="formContent">
-          <!-- Tabs Titles -->
-          <h2 class="active"> Sign In </h2>
-      
-          <!-- Login Form -->
-          <form id="signupForm">
-            <input type="email" id="userEmail" class="fadeIn second" name="login" placeholder="email">
-            <p class="error" id="errorEmail"></p>
-            <input type="password" id="userPassword" class="fadeIn third" name="login" placeholder="password">
-            <input type="password" id="confirmUserPassword" class="fadeIn second" name="login" placeholder="confirm password">
-            <div class="securityLevel" id="securityLevel">
-              <div class="sec"></div>
-              <div class="sec"></div>
-              <div class="sec"></div>
-              <div class="sec"></div>
-              </div>
-            <p id="confirm" class="error"></p>
-            <input type="submit" class="fadeIn fourth" value="Sign Up">
-          </form>
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active">Sign In</h2>
 
-        </div>
+        <!-- Login Form -->
+        <form id="signupForm">
+          <input
+            type="email"
+            id="userEmail"
+            class="fadeIn second"
+            name="login"
+            placeholder="email"
+          />
+          <p class="error" id="errorEmail"></p>
+          <input
+            type="password"
+            id="userPassword"
+            class="fadeIn third"
+            name="login"
+            placeholder="password"
+          />
+          <input
+            type="password"
+            id="confirmUserPassword"
+            class="fadeIn second"
+            name="login"
+            placeholder="confirm password"
+          />
+          <div class="securityLevel" id="securityLevel">
+            <div class="sec"></div>
+            <div class="sec"></div>
+            <div class="sec"></div>
+            <div class="sec"></div>
+          </div>
+          <p id="confirm" class="error"></p>
+          <input type="submit" class="fadeIn fourth" value="Sign Up" />
+        </form>
       </div>
-      <script src="js/users.js"></script>
-</body>
+    </div>
+    <script src="./js/users.js"></script>
+  </body>
 </html>
